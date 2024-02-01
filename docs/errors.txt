@@ -1,0 +1,40 @@
+Bug Report
+==========
+
+Error 1:
+  Class: FriendRecommender
+  Method: makeRecommendations()
+  Test Method: testTwoFriends()
+  Message: Wrong recommendation count
+
+Error 2:
+  Class:
+  Method:
+  Test Method:
+  Message:
+
+Error 3:
+  Class:
+  Method:
+  Test Method:
+  Message:
+
+Error 4:
+  Class:
+  Method:
+  Test Method:
+  Message:
+
+Error 5:
+  Class:
+  Method:
+  Test Method:
+  Message:
+
+Error 6:
+  Class:
+  Method:
+  Test Method:
+  Message:
+
+*********** ADD AS MANY MORE AS NEEDED *******************
