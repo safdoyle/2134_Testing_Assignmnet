@@ -30,9 +30,20 @@ class FriendRecommenderTest {
     assertEquals(u.name + " and " + g.name + " should be friends", al.get(0), "Incorrect recommendation");
   }
 
+  // Check if the suggestion is made.
   @Test
-  void testMakeRecommendations() {
+  void testMakeRecommendationsWithValidFriends() {
+    User a = new User(friendNames[0]);
+    User b = new User(friendNames[1]);
+    User c = new User(friendNames[2]);
+    a.friend("Bob");
+    a.friend("Carol");
+    String expectedSuggestion = "Bob and Carol should be friends";
+    FriendRecommender fr = new FriendRecommender();
+    ArrayList<String> al = new ArrayList<>();
+    fr.makeRecommendations(b, a, al);
+    assertEquals(1, al.size());
+    assertTrue(al.get(0).equals(expectedSuggestion));
   }
 
-  // add more tests as needed using white-box, black-box or a mix of testing strategies
 }
